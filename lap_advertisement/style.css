@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: black;
+    text-align: center;
+}
+
+header h1{
+    color: antiquewhite;
+    padding: 20px;
+}
+
+nav ul{
+    padding: 10px;
+}
+
+nav ul li{
+    color: aquamarine;
+    text-decoration: none;
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: aquamarine;
+    text-decoration: none;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+th, td {
+    border: 1px solid #000000da;
+    padding: 8px;
+    text-align: left; 
+  }
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+#About {
+    padding: 20px;
+    text-align: left;
+    background-color: #f9f9f9; 
+    margin: 20px auto;
+    border-radius: 10px; 
+    width: 80%;
+}
+
+#Contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; 
+    margin: 20px auto;
+    border-radius: 10px; 
+    width: 80%;
+}
