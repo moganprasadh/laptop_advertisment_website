@@ -1,71 +1,144 @@
 html {
     scroll-behavior: smooth;
-    overflow-anchor: none;
 }
-body{
+* {
+    transition: all 0.3s ease; 
+}
+body {
     margin: 0;
     padding: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
     background-color: black;
     text-align: center;
 }
 
-header h1{
+header h1 {
     color: antiquewhite;
     padding: 20px;
 }
 
-nav ul{
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     padding: 10px;
 }
 
-nav ul li{
-    color: aquamarine;
-    text-decoration: none;
-    display: inline;
-    padding: 20px;
+nav ul li {
+    padding: 10px 20px;
 }
 
 nav ul li a {
     color: aquamarine;
     text-decoration: none;
-    
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px aquamarine;
+    transform: scale(1.1);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-  }
+    overflow: hidden;
+    position: relative;
+    font-size: 16px;
+}
+
+th {
+    background-color: #333; 
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+tr:hover {
+    background-color: #ddd; 
+    transition: background-color 0.3s ease;
+}
+
 th, td {
     border: 1px solid #000000da;
     padding: 8px;
-    text-align: left; 
-  }
+    text-align: left;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+    color: white;
+    transform: scale(1.1);
+}
 
 .footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     background-color: black;
     color: white;
-    text-align: center;
-    padding: 15px 10px;
+    padding: 20px; 
+    margin-top: 20px;
 }
 
 #About {
     padding: 20px;
     text-align: left;
-    background-color: #f9f9f9; 
+    background-color: #ffffff; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    border-radius: 10px; 
     width: 80%;
 }
 
 #Contact {
     padding: 20px;
     text-align: center;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     margin: 20px auto;
-    border-radius: 10px; 
     width: 80%;
+}
+
+input:focus, textarea:focus {
+    border-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    transition: box-shadow 0.3s ease;
 }
